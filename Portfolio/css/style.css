@@ -87,3 +87,6 @@ a{
   color: #ff414d;
   text-align: center;
 }
+a:hover{
+  color: #1aa6b7;
+}
