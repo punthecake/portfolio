@@ -1,0 +1,785 @@
+body{
+    background-color:	#fff2a4;
+    margin: 0 auto;
+    font-family: 'Amaranth';font-size: 22px;
+    color: #302e53;
+}
+
+.wrapper{
+    margin: 0 auto;
+    background-color: #eca24d;
+    min-height: 720px;
+    width: 1280px;
+}
+.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: #b45326;
+}
+.logo{
+    height: 100px;
+    width: 200px;
+    float: left;
+    animation: sizzle .8s infinite;
+}
+@keyframes sizzle {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+@keyframes jump {
+	0% {
+		transform: translatey(0%);
+	}
+	50% {
+		transform: translatey(-30%) rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.pancakes{
+    transition: all .5s ease-in-out;
+}
+.pancakes:hover{
+    animation: jump .5s linear;
+}
+.navmenu{
+    margin-top: 20px;
+    float: right;
+    padding: 5px;
+    width: 300px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+    float: left;
+}
+.head{
+    font-size: 60px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+li a:hover {
+    background-color: #f67675;
+    color: #302e53;
+    transform: scale(1.3);
+  }
+  
+.imageheader{
+    margin-top: 65px;
+    margin-left: 330px;
+    height: 175px;
+    width: 600px;
+}
+.content{
+    min-height: 600px;
+    width: 100%;
+}
+.product-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 50px;
+  margin-left: 90px;
+  padding: 20px;
+}
+.product{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.product:hover{
+    transform: scale(1.2);
+}
+.footer{
+	background: linear-gradient(-45deg, #f67675, #f40083);
+	background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  overflow: hidden;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+p{
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* For LOGOS */
+/*pancake logo*/
+.panhead{
+    transform: translate(150px, -45px);
+    position: absolute;
+    background-color: #33292b;
+    height: 30px;
+    width: 300px;
+    border-radius: 0px 0px 30px 30px;
+}
+.panhandler-head{
+    transform: translate(430px, -45px);
+    position: absolute;
+    background-color: #33292b;
+    height: 15px;
+    width: 150px;
+    border-radius: 0px 30px 30px 0px;
+}
+.half-cherry1{
+    transform: translate(250px, -125px);
+    position: absolute; 
+    height: 22.5px; 
+    width: 45px; 
+    border-radius: 150px 150px 0 0;
+    background-color: #FA1754; 
+}
+.half-cherry2{
+    transform: translate(295px, -125px);
+    position: absolute; 
+    height: 22.5px; 
+    width: 45px; 
+    border-radius: 150px 150px 0 0;
+    background-color: #FA1754; 
+}
+.full-cherry{
+    transform: translate(275px, -155px);
+    position: absolute; 
+    height: 45px; 
+    width: 45px; 
+    border-radius: 150px 150px 150px 150px;
+    background-color: #FA1754; 
+}
+.pan{
+    transform: translate(25px, 80px);
+    position: relative;
+    background-color: #33292b;
+    height: 15px;
+    width: 100px;
+    border-radius: 0px 0px 30px 30px;
+}
+.panhandler{
+    transform: translate(121px, 65px);
+    position: relative;
+    background-color: #33292b;
+    height: 8px;
+    width: 75px;
+    border-radius: 0px 30px 30px 0px;
+}
+.panstack1{
+    transform: translate(25px, 46px);
+    position: relative;
+    background-color: #fbd490;
+    height: 10px;
+    width: 100px;
+    border-radius:30px;
+}
+.panstack2{
+    transform: translate(25px, 26px);
+    position: relative;
+    background-color: #d8b173;
+    height: 10px;
+    width: 100px;
+    border-radius:30px;
+}
+.panstack3{
+    transform: translate(25px, 6px);
+    position: relative;
+    background-color: #fbd490;
+    height: 10px;
+    width: 100px;
+    border-radius:30px;
+}
+.panstack4{
+    transform: translate(25px, -14px);
+    position: relative;
+    background-color: #a46f3e;
+    height: 10px;
+    width: 100px;
+    border-radius:30px;
+}
+.cherry1{
+    transform: translate(60px, -38px);
+    position: relative;
+    background-color: #FA1754;
+    height: 15px;
+    width: 15px;
+    border-radius:100px;
+}
+.cherry2{
+    transform: translate(75px, -53px);
+    position: relative;
+    background-color: #FA1754;
+    height: 15px;
+    width: 15px;
+    border-radius:100px;
+}
+.cherry3{
+    transform: translate(68px, -80px);
+    position: relative;
+    background-color: #FA1754;
+    height: 15px;
+    width: 15px;
+    border-radius:100px;
+}
+@keyframes drip {
+	0% {
+		height: 0px;
+	}
+	100% {
+		height: 40px;
+	}
+}
+.syrup1{
+    transform: translate(55px, -65px);
+    position: absolute;
+    background-color: #a46f3e;
+    height: 40px;
+    width: 10px;
+    border-radius:30px;
+    animation: drip 1.8s infinite;
+}
+.syrup2{
+    transform: translate(0px, -65px);
+    left: 75px;
+    position: absolute;
+    background-color: #a46f3e;
+    height: 25px;
+    width: 10px;
+    border-radius:30px;
+    animation: drip 1.5s infinite;
+}
+/*pancake menu*/
+.plate1{
+ height: 200px;
+ width: 200px;
+ background-color: #e6e7e9;
+ border-radius: 50%
+}
+.plate2{
+    height: 170px;
+    width: 170px;
+    background-color: #d3d4d6;
+    border-radius: 50%;
+    position: relative;
+}
+.plate2{
+    transform: translate(15px, -185px);
+}
+.platcake1{
+    height: 150px;
+    width: 150px;
+    background-color: #ac660e;
+    border-radius: 50%;
+    position: relative;
+}
+.platcake1{
+    transform: translate(25px,-345px);
+}
+.platcake2{
+    height: 140px;
+    width: 140px;
+    background-color: #f7921c;
+    border-radius: 50%;
+    position: relative;
+}
+.platcake2{
+    transform: translate(30px,-490px);
+}
+.butter1{
+    height: 30px;
+    width: 30px;
+    background-color: #f8fb00;
+    border-radius: 5px;
+}
+.butter1{
+    transform: translate(85px, -575px);
+}
+/*tea*/
+.milktea{
+    height: 300px;
+    width: 250px;
+}
+.cup{
+        transform: translate(65px, 45px);
+        position: absolute;
+        background-color: #33292b;
+        height: 20px;
+        width: 130px;
+        border-radius: 180px 180px 0px 0px;
+}
+.milk{
+    transform: translate(65px, 70px);
+    position: absolute;
+    height: 200px;
+    width: 90px;
+    border-top: 200px solid #e5a672;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+.straw{
+    transform: translate(155px, 10px);
+    position: absolute;
+    background-color: #33292b;
+    height: 60px;
+    width: 10px;
+    animation: stir 4s infinite;
+}
+.pearl1{
+    background-color: black;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    transform: translate(140px, 195px);
+    animation: float1 2.5s infinite;
+}
+.pearl2{
+    background-color: black;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    transform: translate(120px, 215px);
+    animation: float2 2.8s infinite;
+}
+.pearl3{
+    background-color: black;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+    transform: translate(115px, 185px);
+    animation: float3 2s infinite;
+}
+@keyframes float1 {
+	0% {
+		transform:translate(140px, 195px);
+	}
+	50% {
+		transform:translate(140px, 210px);
+	}
+	100% {
+		+transform:translate(140px, 195px);
+	}
+}
+@keyframes float2 {
+	0% {
+		transform:translate(120px, 215px);
+	}
+	50% {
+		transform:translate(120px, 230px);
+	}
+	100% {
+		+transform:translate(120px, 230px);
+	}
+}
+@keyframes float3 {
+	0% {
+		transform:translate(115px, 185px);
+	}
+	50% {
+		transform:translate(115px, 175px);
+	}
+	100% {
+		+transform:translate(115px, 185px);
+	}
+}
+@keyframes stir {
+	0% {
+		transform:translate(155px, 10px);
+	}
+	50% {
+		transform:translate(95px, 10px);
+	}
+	100% {
+		+transform:translate(155px, 10px);
+	}
+}
+/*coffee*/
+.coffee{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.saucer{
+    width: 200px;
+    background-color: #fff;
+    height: 50px;
+    transform: translateY(220px);
+    position: absolute;
+    border-radius: 30% 30% 50% 50%;
+}
+.coffee-cup{
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 20% 20% 70% 70%;
+    margin-top: 50px;
+    z-index: 999;
+    transform: translateY(0px);
+}
+.coffee-cup::before{
+    content: '';
+    position: absolute;
+    width: 170px;
+    height: 70px;
+    background-color: #6f4e37;
+    border-radius: 50%;
+    box-shadow: inset 0 0 15px rgpa(0,0,0,1) , inset 15px 0px 15px #d7b787;
+    border: 15px solid #fff;
+    transform: translate(-100px, -30px);
+}
+.coffee-cup::after{
+    content: '';
+    position: absolute;
+    right: -60px;
+    top: 30px;
+    width: 50px;
+    height: 75px;
+    transform: rotate(10deg);
+    background-color: #ffffff;
+    border-radius: 50% 40% 120px 0;
+    border: 18px solid #fff;
+}
+.steam{
+    width: 50px;
+    height: 70px;
+    background: white;
+    animation: waft 2s linear infinite;
+    filter:blur(20px);
+    position: absolute;
+    margin-top: 10px;
+    transform: translate(100px, 0px);
+}
+@keyframes waft {
+    0%{
+        transform: translate3d(30,0,0) scale(1);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translate3d(0,-100px,0) scale(3);
+        opacity: 0;
+    }
+}
+/* ice cream */
+}
+.ic-contain{
+  transform: rotate(30deg);
+}
+.icecream{
+  height: 195px;
+  width: 110px;
+  border-radius: 60px 60px 10px 10px;
+  background-color: #30ffc0;
+  position: absolute;
+  transform: translate(85px,0px);
+}
+.popsicle{
+  height: 100px;
+  width: 25px;
+  background-color: #d8c0a8;
+  border-radius: 0px 0px 50px 50px;
+  transform: translate(125px, 195px);
+}
+.ic-detail1{
+  height: 80px;
+  width: 20px;
+  background-color: #30f0c0;
+  border-radius: 50px 50px 50px 50px;
+  transform: translate(110px, -35px);
+  position: absolute;
+}
+.ic-detail2{
+  height: 80px;
+  width: 20px;
+   background-color: #30f0c0;
+  border-radius: 50px 50px 50px 50px;
+  transform: translate(150px, -35px);
+  position: absolute;
+}
+.ic-melt1{
+  height: 80px;
+  width: 20px;
+  background-color: #30ffc0;
+  border-radius: 50px 50px 50px 50px;
+  transform: translate(160px, 75px);
+  position: absolute;
+  animation: melt 2.6s linear infinite;
+}
+.ic-melt2{
+  height: 80px;
+  width: 20px;
+  background-color: #30ffc0;
+  border-radius: 50px 50px 50px 50px;
+  transform: translate(95px, 55px);
+  position: absolute;
+  animation: melt 2s linear infinite;
+}
+@keyframes melt{
+  0%{
+    height: 0px
+  }
+  50%{
+    height: 75px
+  }
+  100%{
+    height: 100px
+  }
+}
+/*for cakes*/
+  .cake{
+    height: 125px;
+    width: 180px;
+    background-color:#F8D9D6;
+    transform: translate(30px, 80px);
+    position: absolute;
+    border-radius: 0px 0px 15px 15px
+  }
+  .icing-base{
+    height: 40px;
+    width: 180px;
+    background-color:#F4F4E1;
+    position: absolute;
+    transform: translate(30px, 50px);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .mid-layer{
+    height: 20px;
+    width: 180px;
+    background-color:#c06048;
+    position: absolute;
+    transform: translate(30px, 130px);
+    z-index: 1;
+  }
+  .icing1{
+    height: 35px;
+    width: 50px;
+    background-color:#F4F4E1;
+    position: absolute;
+    transform: translate(30px, 75px);
+    border-radius: 0px 0px 30px 30px;
+  }
+  .icing2{
+    height: 35px;
+    width: 50px;
+    background-color:#F4F4E1;
+    position: absolute;
+    transform: translate(75px, 75px);
+    border-radius: 0px 0px 30px 30px;
+  }
+  .icing3{
+    height: 35px;
+    width: 50px;
+    background-color:#F4F4E1;
+    position: absolute;
+    transform: translate(120px, 75px);
+    border-radius: 0px 0px 30px 30px;
+  }
+  .icing4{
+    height: 35px;
+    width: 50px;
+    background-color:#F4F4E1;
+    position: absolute;
+    transform: translate(160px, 75px);
+    border-radius: 0px 0px 30px 30px;
+  }
+  .candle{
+    height: 45px;
+    width: 15px;
+    background-color: #f1f2f4;
+    transform: translate(115px, 5px);
+  }
+  .flame {
+    height: 30px;
+    width: 30px;
+    background-color: orangered;
+    border-radius: 30px 0px 30px 30px;
+    transform: rotate(-45deg) translate(130px, 20px);
+    animation: flicker .3s ease-in infinite;
+    position: absolute;
+    box-shadow: 0px 0px 5px 4px OrangeRed
+  }
+  
+  @keyframes flicker {
+      0% {transform: rotate(-45deg) translate(130px, 25px);}
+      20% {transform: rotate(-47deg) translate(130px, 25px) scaleY(1.05);}
+      40% {transform: rotate(-45deg)translate(130px, 25px);}
+      60% {transform: rotate(-47deg)translate(130px, 25px);}
+      80% {transform: rotate(-45deg)translate(130px, 25px) scaleY(0.90);}
+      100% {transform: rotate(-47deg)translate(130px, 25px);}
+  }
+  /*for lemonade*/
+  .lemon{
+    animation: wiggle 2s linear infinite;
+  }
+  .lemon:hover {
+    animation: none;
+  }
+  .lemon-glass{
+    height: 180px;
+    width: 100px;
+    background-color: #b0b8ba;
+    border-radius: 0px 0px 50px 50px;
+    transform: translate(90px, 0px);
+    position: absolute;
+    opacity: 15%;
+  }
+  .lemon-base{
+    height: 100px;
+    width: 10px;
+    background-color: white;
+    transform: translate(135px, 180px);
+    position: absolute; 
+  }
+  .lemon-stand{
+    height: 20px;
+    width: 80px;
+    background-color: white;
+    transform: translate(100px, 270px);
+    border-radius: 30px 30px 0px 0px;
+  }
+  .lemonade{
+    height: 130px;
+    width: 80px;
+    background-color: #fdff3a;
+    border-radius: 0px 0px 50px 50px;
+    transform: translate(100px, 20px);
+    position: absolute;
+  }
+  .lemon-bubble1{
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    opacity: 80%;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(140px, 140px);
+    animation: rise1 1s linear infinite;
+  }
+  .lemon-bubble2{
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    opacity: 80%;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(120px, 135px);
+    animation: rise2 1.3s linear infinite;
+  }
+  .lemon-bubble3{
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    opacity: 80%;
+    border-radius: 10px;
+    position: absolute;
+      transform: translate(160px, 129px);
+    animation: rise3 1.6s linear infinite;
+  }
+  @keyframes rise1{
+    0% { transform: translate(140px, 140px);}
+    100% {transform: translate(140px, 20px);}
+  }
+  @keyframes rise2{
+    0% { transform: translate(120px, 135px);}
+    100% {transform: translate(120px, 20px);}
+  }
+  @keyframes rise3{
+    0% { transform: translate(160px, 129px);}
+    100% {transform: translate(160px, 20px);}
+  }
+  @keyframes wiggle {
+      0% { transform: rotate(0deg); }
+     80% { transform: rotate(0deg); }
+     85% { transform: rotate(5deg); }
+     95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+/*end of logos*/
+/*social medias */
+.socmed{
+    height: 100px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 10px 0px 10px;
+}
+.fa {
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    animation: float 1.5s linear infinite;
+  }
+.fa:hover {
+    opacity: 0.7;
+    animation: none;
+    transform: translate(2.2);
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    transition: .1s;
+    transition-delay: 150ms;
+    animation-delay: .2s;
+  }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    transition: .3s;
+    transition-delay: 250ms;
+    animation-delay: .4s;
+  }
+.fa-instagram {
+    background: #f40083;
+    color: white;
+    transition: .6s;
+    transition-delay: 350ms;
+    animation-delay: .6s;
+  }
+.fa-github {
+    background: #000000;
+    color: white;
+    transition: .9s;
+    transition-delay: 450ms;
+    animation-delay: .8s;
+  }
+  @keyframes float{
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(5%); }
+    100% { transform: translateY(0%); }
+  }
