@@ -15,6 +15,7 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
             <button class="dropbtn">Learning Evidences</button>
             <div class="dropdown-content">
             <a href="LE/CLE1/index.php" target="_blank">CLE1</a>
+            <a href="LE/CLE2/index.php" target="_blank">CLE2</a>
             </div>
             </div>
             <div class="dropdown">
