@@ -1,0 +1,60 @@
+body{
+    overflow: hidden;
+    margin: 0 auto;
+}
+.background{
+    margin: 0 auto;
+    position: absolute;
+    z-index: -1;
+}
+.content{
+    min-height: 700px;
+}
+.banner{
+    transform: scale(0.75) translate(775px, -140px);
+    animation: drop 3s ease-in-out;
+    position: absolute;
+    transition: all .2s ease-in-out;
+}
+@keyframes drop {
+	0% {
+		transform: translate(581px, -600px) scale(0.75);
+	}
+	100% {
+		transform: translate(581px, -105px) scale(0.75);
+	}
+}
+.banner h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 700%;
+    position: absolute;
+    transform: translate(175px, -350px);
+}
+.footer{
+    transition: all .2s ease-in-out;
+}
+.footer:hover{
+    transform: scale(1,1.1);
+}
+.wind-1{
+    position: absolute;
+    z-index: -1;
+    transform: scale(.7) translateX(-180px);
+}
+.wind-2{
+    position: absolute;
+    z-index: -1;
+    transform: scale(.7) rotate(180deg) translate(-1800px, -150px);
+}
+.wood{
+    animation: sway 4s infinite;
+    transform-origin: 50% 100% 0;
+    transition: ease-in-out;
+}
+.wood:hover{
+    animation: stop;
+}
+@keyframes sway {
+    0%, 100%{ transform: rotate(-1deg);}
+    50%{ transform: rotate(1deg); }
+}
