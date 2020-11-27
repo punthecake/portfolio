@@ -16,7 +16,7 @@
             </p>
             <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
         <h2>CSS Scale</h2>
-        <p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="css,result" data-user="punthecake" data-slug-hash="ExKvaWM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Scale">
+        <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="css,result" data-user="punthecake" data-slug-hash="ExKvaWM" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="CSS Scale">
         <span>See the Pen <a href="https://codepen.io/punthecake/pen/ExKvaWM">
          CSS Scale</a> by Francisco Jubelag Jr. XV (<a href="https://codepen.io/punthecake">@punthecake</a>)
         on <a href="https://codepen.io">CodePen</a>.</span>

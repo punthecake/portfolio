@@ -12,24 +12,29 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
         <div class="navbar">
             <a href="index.php?page=home">Home</a>
             <div class="dropdown">
-            <button class="dropbtn">Learning Evidences</button>
-            <div class="dropdown-content">
-            <a href="LE/CLE1/index.php" target="_blank">CLE1</a>
-            <a href="LE/CLE2/index.php" target="_blank">CLE2</a>
-            </div>
-            </div>
-            <div class="dropdown">
-            <button class="dropbtn">Learning Tasks</button>
+            <button class="dropbtn">CSS</button>
             <div class="dropdown-content">
             <a href="index.php?page=LT2_2">Learning Task 2.2(Prelim)</a>
             <a href="index.php?page=LT2_3">Learning Task 2.3(Prelim)</a>
             <a href="index.php?page=LT3_2">Learning Task 3.2(Prelim)</a>
             <a href="index.php?page=LT3_3">Learning Task 3.3(Prelim)</a>
             <a href="index.php?page=LT4_1">Learning Task 4.1(Prelim)</a>
+            <a href="LE/CLE1/index.php" target="_blank">CLE1</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">SVG</button>
+            <div class="dropdown-content">
             <a href="https://jubelag-engage-svg.herokuapp.com" target="_blank">Learning Task 5.4(Midterm)</a>
-            <a href="index.php?page=LE6_1">Learning Task 6.1(Midterm)</a>
-            <a href="index.php?page=LE6_2">Learning Task 6.2(Midterm)</a>
-    
+            <a href="index.php?page=LT6_1">Learning Task 6.1(Midterm)</a>
+            <a href="index.php?page=LT6_2">Learning Task 6.2(Midterm)</a>
+            <a href="LE/CLE2/index.php" target="_blank">CLE2</a>
+            </div>
+            </div>
+            <div class="dropdown">
+            <button class="dropbtn">JS</button>
+            <div class="dropdown-content">
+            <a href="index.php?page=LT7_1">Learning Task 7.1(Endterm)</a>
             </div>
             </div>
         </div>
@@ -51,11 +56,14 @@ $page = (isset($_GET['page']) && $_GET['page'] != '') ? $_GET['page']: '';
             case 'LT4_1':
                 require_once ('LT4_1.php');
             break;
-            case 'LE6_1':
-                require_once ('LE6_1.php');
+            case 'LT6_1':
+                require_once ('LT6_1.php');
             break;
-            case 'LE6_2':
-                require_once ('LE6_2.php');
+            case 'LT6_2':
+                require_once ('LT6_2.php');
+            break;
+            case 'LT7_1':
+                require_once ('LT7_1.php');
             break;
             default:
                 require_once ('home.php');

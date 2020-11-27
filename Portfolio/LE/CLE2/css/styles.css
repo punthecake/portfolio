@@ -6,9 +6,11 @@ body{
     margin: 0 auto;
     position: absolute;
     z-index: -1;
+    overflow: hidden;
 }
 .content{
-    min-height: 700px;
+    min-height: 720px;
+    overflow: hidden;
 }
 .banner{
     transform: scale(0.75) translate(775px, -140px);
