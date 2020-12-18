@@ -68,7 +68,7 @@ h1{
     height: 10px;
   }
   .slides::-webkit-scrollbar-thumb {
-    background: black;
+    background: #ff414d;
     border-radius: 10px;
   }
   .slides::-webkit-scrollbar-track {
